@@ -30,4 +30,5 @@ This project was built with the following technologies:
     ```
 4. Open a web browser and go to http://localhost:5173 to view the application.
 
-
+**NOTE:** The OpenAI API key used in this project has been removed for the purpose of preserving the privacy of the user who originally created the API key. If you wish to try out this project, you can simply replace the text `OPEN_AI_API_KEY` in the `FetchContent.js` file under `src` directory with your own API key. This will allow you to use the project as intended. Please note that an API key is necessary for the proper functioning of the project.
+You can sign up for an API key at the [OpenAI Developer Portal](https://beta.openai.com/signup/)
