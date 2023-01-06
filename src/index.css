@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Karla", sans-serif;
+  margin: 1em;
+  background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+  background-attachment: fixed;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+  width: 45%;
+  height: 3rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  border: 3px solid black;
+}
+
+button[type="submit"] {
+  min-width: 15%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+button[type="submit"]:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.loader {
+  display: block;
+  margin: 0 auto;
+}
+
+.generated-content {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generated-text > * {
+  color: black;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.content-box {
+  max-width: 70%;
+  padding: 20px;
+  margin: 1em auto;
+  border-radius: 10px;
+  border: 3px solid;
+  border-image: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2) 1;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: #d8eedb;
+}
+
+.copy-btn {
+  display: block;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 80px;
+  margin: 1em auto;
+  border-radius: 5%;
+}
+
+.copy-btn:hover {
+  background-color: rgb(31, 29, 29);
+}
+
+.copy-btn::before {
+  content: "\f0c5";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 0.5em;
+}
+
+p {
+  font-size: 1.3rem;
+  color: black;
+  margin-bottom: 0.5em;
+}
